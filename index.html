@@ -8,6 +8,28 @@
     integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <link rel="stylesheet" href="game.css">
     <script type="module" src="game.js"></script>
+    <h1 style="color: rgb(128, 0, 0);">
+        Countdown to Christmas
+    </h1>
+    <script>
+        let today = new Date();
+        let christmasYear = today.getFullYear();
+        if (today.getMonth() == 11 &&
+            today.getDate() > 25) {
+        christmasYear = christmasYear + 1;
+        }
+
+        let christmasDate =
+            new Date(christmasYear, 11, 25);
+        let dayMilliseconds =
+            1000 * 60 * 60 * 24;
+        let remainingDays = Math.ceil(
+        (christmasDate.getTime() - today.getTime()) /
+        (dayMilliseconds)
+        );
+        document.write("There are " + remainingDays +
+                    " days remaining until Christmas.");
+    </script>
 </head>
 <body>
     <main>
