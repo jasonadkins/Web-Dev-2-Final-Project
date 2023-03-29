@@ -51,5 +51,34 @@
             <div id="answer" class="is-hidden"></div>
         </div>
     </main>
+
+<h1>Temperature Converter</h1>
+<p>Type Temperature in celcius to convert it into fahrenheit</p>
+<p>
+<label>Celcius</label>
+<input id="inputKG" type="number" placeholder="Celcius"
+oninput="CtoFConverter(this.value)" onchange="CtoFConverter(this.value)">
+</p>
+<p>Fahrenheit: <span class="fahrenheit"></span></p>
+<script>
+    function CtoFConverter(temp) {
+       document.querySelector(".fahrenheit").innerHTML=(temp-32)/1.8;
+    }
+ </script>
+
+ <h1>Length Converter</h1>
+ <p>Type a value in the Meters field to convert the value to Feet:</p>
+
+ <p>
+   <label>Meters</label>
+   <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+ </p>
+ <p>Feet: <span id="outputFeet"></span></p>
+
+ <script>
+ function LengthConverter(valNum) {
+   document.getElementById("outputFeet").innerHTML=valNum*3.2808;
+ }
+ </script>
 </body>
 </html>

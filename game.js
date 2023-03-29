@@ -4,7 +4,7 @@ import { getClue as getClueFromAsyncFunction } from './async-await-version.js';
 let answer = document.getElementById('answer');
 let score = 0;
 let playerResponse = document.getElementById('player-response');
-
+let LengthConverter = document.getElementById('outputFeet')
 
 function htmlClues(clue) {
     document.getElementById('answer').innerHTML = clue.answer;
