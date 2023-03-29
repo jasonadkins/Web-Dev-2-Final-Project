@@ -7,6 +7,6 @@ This project uses a Trivia api to pull in a bunch of random trivia question.  Th
 1. Retrieve data from a third-party API and use it to display something within your app.
 2. Calculate and display data based on an external factor (ex: get the current date, and display how many days remaining until some event)
  - Countdown to Christmas
-3. Need to add 1 of the other features.
+3. I noticed a lot of the questions used Celcius for temperatures and meters for measurments.  I added a Celcius to Fahrenheit Converter and a Meters to Feet Converter.
 
 I have been running my project using Go Live Server built into Visual Studio Code.
